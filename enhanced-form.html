@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form</title>
+  <meta name="description" content="An enhanced HTML5 form demonstrating structured content, validation, and accessibility.">
+</head>
+<body>
+
+  <header>
+    <h1>User Information and Preferences</h1>
+    <nav>
+      <ul>
+        <li><a href="#form">Form</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="form">
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+
+        <!-- Text input -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required><br><br>
+
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com" required><br><br>
+
+        <!-- Date input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Radio buttons -->
+        <fieldset>
+          <legend>Gender:</legend>
+          <label><input type="radio" name="gender" value="female" required> Female</label>
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </fieldset><br>
+
+        <!-- Checkboxes -->
+        <fieldset>
+          <legend>Interests:</legend>
+          <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+          <label><input type="checkbox" name="interests" value="music"> Music</label>
+          <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+        </fieldset><br>
+
+        <!-- Select -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">Select</option>
+          <option value="us">USA</option>
+          <option value="uk">UK</option>
+          <option value="ke">Kenya</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" placeholder="Write about yourself..." rows="4" cols="50" maxlength="300"></textarea><br><br>
+
+        <!-- Readonly Field -->
+        <label for="referrer">Referrer:</label>
+        <input type="text" id="referrer" name="referrer" value="Online Campaign" readonly><br><br>
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+
+      </form>
+    </section>
+
+    <section id="table">
+      <h2>Sample Data Table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jane Doe</td>
+            <td>jane@example.com</td>
+            <td>Kenya</td>
+          </tr>
+          <tr>
+            <td>John Smith</td>
+            <td>john@example.com</td>
+            <td>USA</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="media">
+      <h2>Embedded Media</h2>
+      <h3>Image</h3>
+      <img src="https://via.placeholder.com/300x150" alt="Sample Image" width="300">
+
+      <h3>Video</h3>
+      <video width="320" height="240" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Enhanced Form Project</p>
+  </footer>
+
+</body>
+</html>
